@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Grotesque";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Grotesque Black";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff");
+  font-weight: bold;
+}
+
+
+
+
+.type_section .post {
+    cursor: pointer;
+    width: 280px;
+    height: auto;
+    background: rgb(206, 206, 206);
+    box-shadow: -1px 2px 8px -1px rgba(85,85,85,0.85);
+   -webkit-box-shadow: -1px 2px 8px -1px rgba(85,85,85,0.85);
+   -moz-box-shadow: -1px 2px 8px -1px rgba(85,85,85,0.85);
+   border-radius: 5px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+  }
+  .type_section .post .image img {
+    width: 100%;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+  }
+  .type_section .post .post_content {
+    padding: 0 20px;
+  }
+  .type_section .post .post_content h5 {
+    font-size: 18.8px ;
+    text-transform: uppercase;
+    font-family: "Grotesque black", sans-serif;
+    font-weight: 400;
+  }
+  .type_section .post .post_content p {
+    font-size: 13px;
+    font-family: "Grotesque black", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .type_section .post .post_content p span {
+    font-size: 14px;
+    font-family: "Grotesque black", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #0cb0e4;
+  }

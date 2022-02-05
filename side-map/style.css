@@ -1,0 +1,312 @@
+
+ .nav-link {
+  
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fdfdfd;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .navbar {
+    background:#563d7c;
+    
+  }
+  
+  
+  
+  
+
+
+  .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  
+  
+  .nav-item {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  
+  .navbar {
+    transition: .7s;
+  }
+  .btn-outline{
+    font-weight: 400;
+    color: #fff;
+    background-color: #7952b3;
+    border-color: #7952b3;
+  }
+  .btn-outline:hover{
+    background-color: #4e386f;
+    border-color: #6f42c1;
+    color: #fff;
+  
+  }
+  
+
+
+  #logo {
+    margin-top: -12px;
+    margin-bottom: -12px;
+    width: 70px;
+    height: 70px;
+  }
+
+
+#primaryNav li {
+    width: 25%;
+}
+
+#primaryNav li ul li {
+    width: 100% !important;
+}
+
+
+#primaryNav.col6 li {
+    width: 170px;
+}
+
+
+/* ------------------------------------------------------------
+General Styles
+------------------------------------------------------------ */
+
+
+.sitemap {
+    margin: 0 0 40px 0;
+    float: left;
+    width: 100%;
+}
+
+
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+
+
+
+
+#primaryNav #home {
+    display: block;
+    float: none;
+    position: relative;
+    z-index: 2;
+   margin-top:2px ;
+   margin-bottom: 2px;
+   margin-left:auto ;
+   margin-right: auto;
+    padding: 0 0 40px 0;
+}
+
+#primaryNav li {
+    float: left;
+    background: url('http://idefisc-corp.fr/wp-content/themes/konzept/images/L1-center.png') center top no-repeat;
+    padding: 30px 0;
+    margin-top: -30px;
+}
+
+#primaryNav li a {
+    margin: 0 20px 0 0;
+    padding: 10px 0;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: #7952b3
+     url('http://idefisc-corp.fr/wp-content/themes/konzept/images/white-highlight.png') top left repeat-x;
+    border: 2px solid #7952b3;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+    /* FF 3.5+ */
+}
+
+#primaryNav li a:hover {
+    background-color: #7952b3;
+    border-color: #9d97cf;
+}
+
+
+
+#primaryNav a:link:before,
+#primaryNav a:visited:before {
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+
+/* --------	Second Level --------- */
+
+#primaryNav li li {
+    width: 100%;
+    clear: left;
+    margin-top: 0;
+    padding: 10px 0 0 0;
+    background: url('https://i.ibb.co/bNhMjBF/vertical-line.png') center bottom repeat-y;
+}
+
+#primaryNav li li a {
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
+
+#primaryNav li li a:hover {
+    border-color: #725fb7;
+    background-color: #e5d7f1;
+}
+
+#primaryNav li li:first-child {
+    padding-top: 30px;
+}
+
+#primaryNav li li:last-child {
+    background: url('https://i.ibb.co/bNhMjBF/vertical-line.png') center bottom repeat-y;
+}
+
+#primaryNav li li a:link:before,
+#primaryNav li li a:visited:before {
+    color: #7c5caf;
+}
+
+/* --------	Third Level --------- */
+
+#primaryNav li li ul {
+    margin: 10px 0 0 0;
+    width: 100%;
+    float: right;
+    padding: 9px 0 10px 0;
+    background-color: #563d7c;        }
+
+#primaryNav li li li {
+    background: url('http://idefisc-corp.fr/wp-content/themes/konzept/images/L3-center.png') left center no-repeat;
+    padding: 5px 0;
+}
+
+#primaryNav li li li a {
+    background-color: #563d7c;   
+    background-color: #563d7c;               font-size: 12px;
+    padding: 5px 0;
+    width: 80%;
+    float: right;
+}
+
+#primaryNav li li li a:hover {
+    background-color: #563d7c;         
+          border-color: #662cd1;
+}
+
+#primaryNav li li li:first-child {
+    padding: 15px 0 5px 0;
+    background: url('http://idefisc-corp.fr/wp-content/themes/konzept/images/L3-li-top.png') left center no-repeat;
+}
+
+#primaryNav li li li:last-child {
+    background: url('http://idefisc-corp.fr/wp-content/themes/konzept/images/L3-bottom.png') left center no-repeat;
+}
+
+#primaryNav li li li a:link:before,
+#primaryNav li li li a:visited:before {
+    background-color: #563d7c;       
+            font-size: 9px;
+}
+
+
+
+
+#utilityNav {
+    float: right;
+    max-width: 50%;
+    margin-right: 10px;
+}
+
+#utilityNav li {
+    float: left;
+    margin-bottom: 10px;
+}
+
+#utilityNav li a {
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    display: block;
+    border: 2px solid #794be3;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background: #fff7aa url('http://idefisc-corp.fr/wp-content/themes/konzept/images/white-highlight.png') top left repeat-x;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+    /* FF 3.5+ */
+}
+
+#utilityNav li a:hover {
+    background-color: #fffce5;
+    border-color: #582cd1;
+}
+
+#utilityNav li a:link:before,
+#utilityNav li a:visited:before {
+    color: #2014cc;
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+
+.heading{list-style: none;}
+
+.udlc {
+
+text-transform: uppercase;
+text-decoration: none;
+display: inline-block;
+position: relative;
+}
+
+
+
+
+.udlc:after {
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 4px;
+left: 50%;
+position: absolute;
+background: #563d7c;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+.udlc:hover:after {
+width: 100%;
+left: 0;
+}
+
+
+

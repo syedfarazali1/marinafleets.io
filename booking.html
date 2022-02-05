@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+
+
+</head>
+
+<style>
+    .nav-link {
+
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-link:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fdfdfd;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .navbar {
+        background: #563d7c;
+    }
+
+
+    .nav-link:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    .nav-item {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+
+    .navbar {
+        transition: .7s;
+    }
+
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .ft {
+        padding-top: 5%;
+        color: #c4b1ff;
+
+    }
+
+    #footer {
+        background-color: #292929;
+        height: 300px;
+
+
+    }
+
+    #logo {
+        margin-top: -12px;
+        margin-bottom: -12px;
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .main {
+        margin: 10%;
+        text-align: center;
+    }
+
+
+    .container {
+
+        margin: 10% auto;
+        max-width: 700px;
+        width: 100%;
+        background: white;
+        padding: 25px 30px;
+        border-radius: 7px;
+        -moz-box-shadow: 4px 4px 4px 4px #c4b1ff;
+        -webkit-box-shadow: 4px 4px 4px 4px #c4b1ff;
+        box-shadow: 4px 4px 4px 4px #c4b1ff;
+    }
+
+    .btn-outline {
+        font-weight: 600;
+        color: #fff;
+        background-color: #7952b3;
+        border-color: #7952b3;
+    }
+
+    .btn-outline:hover {
+        background-color: #4e386f;
+        border-color: #6f42c1;
+    }
+
+
+    .container .title {
+        font-size: 35px;
+        font-weight: 600;
+        position: relative;
+    }
+
+    .container .title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 120px;
+        background-color: #563d7c;
+    }
+
+    .container form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 20px 0 12px 0;
+    }
+
+
+
+    .fa-facebook {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: white;
+    }
+
+    .fa-facebook:hover {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #3b5998;
+        box-shadow: 0 0 15px #3b5998;
+    }
+
+    .fa-instagram {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: white;
+    }
+
+    .fa-instagram:hover {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #bc2a8d;
+        box-shadow: 0 0 15px #bc2a8d;
+    }
+
+    .fa-twitter {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: white;
+    }
+
+    .fa-twitter:hover {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #00aced;
+        box-shadow: 0 0 15px #00aced;
+    }
+
+    .fa-whatsapp {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: white;
+    }
+
+    .fa-whatsapp:hover {
+        transition: .5s;
+        border-radius: 50%;
+        font-size: 40px;
+        color: #4dc247;
+        box-shadow: 0 0 15px #4dc247;
+    }
+
+    .udlc {
+
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+
+
+
+    .udlc:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: #563d7c;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .udlc:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+
+
+
+    .container form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 20px 0 12px 0;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+
+    .user-details .input-box .details {
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .user-details .input-box input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.5s ease;
+    }
+
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+        border-color: #4e386f;
+    }
+
+    form input[type="radio"] {
+        display: none;
+    }
+
+    form .button {
+        height: 45px;
+        margin: 45px 0;
+    }
+
+    form .button input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #fff;
+        background-color: #7952b3;
+        border-color: #7952b3;
+    }
+
+    form .button input:hover {
+        color: #fff;
+        background-color: #4e386f;
+        border-color: #6f42c1;
+    }
+
+    @media (max-width: 584px) {
+        .container {
+            max-width: 100%;
+        }
+
+        form .user-details .input-box {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .container form .user-details {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+
+        .user-details::-webkit-scrollbar {
+            width: 0;
+
+        }
+
+    }
+
+
+
+    .heading {
+        margin-top: 10%;
+        text-align: center;
+    }
+</style>
+
+
+
+
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand text-white" href="#"> <img id="logo"
+                src="Img/marina_fleet__1_-removebg-preview.png" alt="" srcset=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html#FEATURED">FEATURED</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="types.html">CATEGORIES</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html#hgn">GALLERY</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" target="_blank" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html#contact">CONTACT US</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white bold " href="advertising.html">advertising</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white bold " href="side-map.html">SIDE-MAP</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#booking" rel="noopener noreferrer"><button type="button" class="btn btn-outline">ONLINE
+                            BOOKING</button> </a>
+
+
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="container-fluid heading ">
+        <h1 class="udlc font-weight-bold">
+            BOOK YOUR ORDER
+        </h1>
+    </div>
+
+
+    <div class="container">
+        <div class="title">BOOKING
+
+
+        </div>
+        <form action="#" onsubmit="return formvalidation()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="input1" maxlength="20" minlength="4" placeholder="Enter Your First Name" required>
+                    <span class="focus-border" style="font-size: 11px; color: gray; " id="fname-error">Firstname is
+                        required*</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="input2" maxlength="20" minlength="4" placeholder="Enter Your Last Name" required>
+                    <span class="focus-border" style="font-size: 11px; color: gray; " id="fname-error">Lastname is
+                        required*</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" id="email1" maxlength="20" placeholder="Enter Your Email" required>
+                    <span id="email1-error" style="font-size: 11px; color: gray; " class="focus-border">
+                        Mention Your email*
+                    </span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Enter Boat or Yacht Name Here</span>
+                    <input type="text" id="Boat" maxlength="30" minlength="4" placeholder="Boat/Yacht Name Here"
+                        required>
+                    <span id="boat-error" style="font-size: 11px; color: gray; " class="focus-border">
+                        Mention Your Yacht Name*
+                    </span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="number" id="Phone" placeholder="Enter Your Phone Number" required>
+                    <span id="Phone-error" style="font-size: 11px; color: gray; " class="focus-border">
+                        Mention Your phone number*
+                    </span>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Pick Up ZIP/Location</span>
+                    <input type="text" id="location" placeholder="Pick up ZIP/location" required>
+                    <span id="location-error" style="font-size: 11px; color: gray; " class="focus-border">
+                        Mention Your Pick Up location*
+                    </span>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="date" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container-fluid " id="footer">
+
+        <h1 class=" text-center font-weight-bold ft">MARINA FLEET
+        </h1>
+        <p class="text-white text-center">Our team is made of highly dedicated specialists from all areas of
+            yachting.
+
+
+            <br>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+        </p>
+        <p class="text-white text-center">
+            All Rights Reserved
+
+        </p>
+        <p class="text-white text-center">
+            Designed by Syed Faraz Ali
+        </p>
+
+    </div>
+
+
+</body>
+
+<script>
+
+
+    function formvalidation() {
+        var fname = document.getElementById('input1').value;
+        var lname = document.getElementById('input2').value;
+        var email1 = document.getElementById('email1').value;
+        var Boat = document.getElementById('Boat').value;
+
+
+        if (fname.replace(/\s/g, "").length <= 0) {
+
+            document.getElementById('fname-error').innerHTML = "FirstName can't be blank or white spaced";
+            document.getElementById('fname-error').style.color = "red";
+            document.getElementById('fname-error').style.fontWeight = "bold";
+            document.getElementById('fname-error').style.fontSize = "small";
+
+
+            return false;
+        } else {
+            document.getElementById('fname-error').innerHTML = "Firstname added";
+            document.getElementById('fname-error').style.color = "green";
+            document.getElementById('fname-error').style.fontWeight = "bold";
+            document.getElementById('fname-error').style.fontSize = "small";
+        }
+
+        if (fname.replace(/\s/g, "").length <= 0) {
+
+            document.getElementById('boat-error').innerHTML = "Boat can't be blank or white spaced";
+            document.getElementById('boat-error').style.color = "red";
+            document.getElementById('boat-error').style.fontWeight = "bold";
+            document.getElementById('boat-error').style.fontSize = "small";
+
+
+            return false;
+        } else {
+            document.getElementById('boat-error').innerHTML = "Boat name added";
+            document.getElementById('boat-error').style.color = "green";
+            document.getElementById('boat-error').style.fontWeight = "bold";
+            document.getElementById('boat-error').style.fontSize = "small";
+        }
+
+        if (email1.replace(/\s/g, "").length <= 0) {
+
+            document.getElementById('email1-error').innerHTML = "Email field can't be empty or white spaced";
+            document.getElementById('email1-error').style.color = "red";
+            document.getElementById('email1-error').style.fontWeight = "bold";
+            document.getElementById('email1-error').style.fontSize = "small";
+            return false;
+
+        }
+        else if (email1.indexOf('@') <= 0) {
+
+            document.getElementById('email1-error').innerHTML = "Invalid email";
+            document.getElementById('email1-error').style.color = "red";
+            document.getElementById('email1-error').style.fontWeight = "bold";
+            document.getElementById('email1-error').style.fontSize = "small";
+            return false;
+        }
+        else if ((email1.charAt(email1.length - 4) != '.') && (email1.charAt(email1.length - 3) != '.')) {
+            document.getElementById('email1-error').innerHTML = "invalid . position";
+            document.getElementById('email1-error').style.color = "red";
+            document.getElementById('email1-error').style.fontWeight = "bold";
+            document.getElementById('email1-error').style.fontSize = "small";
+            return false;
+        }
+        else {
+            document.getElementById('email1-error').innerHTML = "Your Email added";
+            document.getElementById('email1-error').style.color = "green";
+            document.getElementById('email1-error').style.fontWeight = "bold";
+            document.getElementById('email1-error').style.fontSize = "small";
+        }
+
+
+
+        $(document).ready(function () {
+            $("#form1").validate({
+                rules: {
+                    myname: {
+                        required: ture
+                    }
+                }
+            });
+        })
+    }
+
+
+    var fname = document.getElementById('input1');
+    fname.addEventListener('keypress', function (event) {
+        var key = event.keyCode;
+        if (key === 32) {
+            event.preventDefault();
+        }
+    });
+
+    var lname = document.getElementById('input2');
+    lname.addEventListener('keypress', function (event) {
+        var key = event.keyCode;
+        if (key === 32) {
+            event.preventDefault();
+        }
+    });
+    var email = document.getElementById('email1');
+    email.addEventListener('keypress', function (event) {
+        var key = event.keyCode;
+        if (key === 32) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</html>

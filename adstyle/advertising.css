@@ -1,0 +1,201 @@
+*{  font-family: 'Roboto', sans-serif;}
+.nav-link {
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fdfdfd;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar {
+  background:#563d7c;
+}
+
+.bold{font-weight: bold; font-size: 15px;}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+#logo{margin-top: -12px; margin-bottom: -12px;  width: 70px; height: 70px;}
+
+
+
+.btn-outline{
+    font-weight: 600;
+    color: #fff;
+    background-color: #7952b3;
+    border-color: #7952b3;
+  }
+  .btn-outline:hover{
+    background-color: #4e386f;
+    border-color: #6f42c1;
+    color: white;
+  }
+  .c-1{height: 250px;}
+
+
+  .text-color{    color: #563d7c; font-weight: bolder;}
+
+
+
+
+  
+.udlc {
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+
+
+
+.udlc:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #563d7c;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.udlc:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+.nav-item {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.navbar {
+  transition: .7s;
+}
+
+
+.navbar {
+  background:#563d7c;
+}
+
+
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+.nav-link {
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fdfdfd;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+#footer {
+  background-color: #292929;
+  height: 300px;
+}
+
+
+.ft {
+  padding-top: 5%;
+  color: #c4b1ff;
+  
+}
+
+
+
+
+.fa-facebook {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.fa-facebook:hover {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+}
+
+.fa-instagram {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.fa-instagram:hover {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+}
+
+.fa-twitter {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.fa-twitter:hover {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #00aced;
+  box-shadow: 0 0 15px #00aced;
+}
+
+.fa-whatsapp {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: white;
+}
+
+.fa-whatsapp:hover {
+  transition: .5s;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #4dc247;
+  box-shadow: 0 0 15px #4dc247;
+}
